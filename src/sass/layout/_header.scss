@@ -1,0 +1,27 @@
+@use "../abstracts/variables.scss" as *;
+
+.header {
+  padding: 2.4rem 4.8rem 2.4rem 6.4rem;
+
+  display: flex;
+  justify-content: space-between;
+
+/*  outline: 10px solid red;*/
+}
+
+.header__cta-link {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid $primary-pink;
+  border-radius: 50px;
+  color: $primary-pink;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover, &:active {
+    cursor: pointer;
+    background-color: $primary-pink;
+    color: $normal-white;
+  }
+}
+

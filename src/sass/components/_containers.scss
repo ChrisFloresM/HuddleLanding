@@ -1,0 +1,17 @@
+@use "../abstracts/variables.scss" as *;
+
+/* reusable components in from main section */
+.description--bg {
+  background-size: 100%, 100%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  padding: 9vw 0;
+}
+
+.bg-pale-blue {
+  background-color: $neutral-pale-blue;
+}
+
+.desktop-order-reverse {
+  order: 2;
+}

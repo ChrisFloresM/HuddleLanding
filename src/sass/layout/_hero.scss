@@ -1,0 +1,67 @@
+@use "../abstracts/variables.scss" as *;
+
+.main__hero {
+  max-width: 140rem;
+  margin: 12.8rem auto;
+  font-family: $heading-font-stack;
+  color: $neutral-dark-cyan;
+  padding: 4.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main__hero-header {
+  font-size: 6.2rem;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.main__hero-description {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 20rem;
+}
+
+.main__hero-mockups {
+  width: 100%;
+  margin-top: 12.8rem;
+}
+
+.main__hero-stadistics-container {
+  margin: 12.8rem 0 0 0;
+  width: 100%;
+  padding: 0 9.6rem;
+  font-family: $body-font-stack;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main__hero-stadistics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+
+}
+
+.main__hero-stadistics-icon {
+  align-self: flex-start;
+}
+
+.main__hero-stadistics-number {
+  font-size: 9.8rem;
+  font-weight: $font-weight-bold;
+}
+
+.main__hero-stadistics-subtext {
+  font-size: 2.4rem;
+  color: #AAA;
+}
