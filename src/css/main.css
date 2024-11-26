@@ -209,11 +209,11 @@ body {
 }
 
 .main__description-grow {
-  background-image: url("../../../assets/img/bg-section-top-desktop-1.svg"), url("../../../assets/img/bg-section-bottom-desktop-1.svg");
+  background-image: url("../assets/img/bg-section-top-desktop-1.svg"), url("../assets/img/bg-section-bottom-desktop-1.svg");
 }
 
 .main__description-users {
-  background-image: url("../../../assets/img/bg-section-top-desktop-2.svg"), url("../../../assets/img/bg-section-bottom-desktop-2.svg");
+  background-image: url("../assets/img/bg-section-top-desktop-2.svg"), url("../assets/img/bg-section-bottom-desktop-2.svg");
 }
 
 .main__section-bg {
@@ -288,6 +288,9 @@ body {
     gap: 9.6rem;
     justify-content: center;
   }
+  .main__hero-stadistics-icon {
+    max-width: 20%;
+  }
   /* Description */
   .main__description-heading {
     font-size: 3rem;
@@ -332,10 +335,10 @@ body {
   }
   /* description */
   .main__description-grow {
-    background-image: url("../../../assets/img/bg-section-top-mobile-1.svg"), url("../../../assets/img/bg-section-bottom-mobile-1.svg");
+    background-image: url("../assets/img/bg-section-top-mobile-1.svg"), url("../assets/img/bg-section-bottom-mobile-1.svg");
   }
   .main__description-users {
-    background-image: url("../../../assets/img/bg-section-top-mobile-2.svg"), url("../../../assets/img/bg-section-bottom-mobile-2.svg");
+    background-image: url("../assets/img/bg-section-top-mobile-2.svg"), url("../assets/img/bg-section-bottom-mobile-2.svg");
   }
   .description--bg-grow {
     padding: 29vw 0 10vw 0;

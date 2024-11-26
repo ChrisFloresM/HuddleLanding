@@ -28,6 +28,10 @@
     justify-content: center;
   }
 
+  .main__hero-stadistics-icon {
+    max-width: 20%;
+  }
+
   /* Description */
   .main__description-heading {
     font-size: 3rem;
@@ -83,14 +87,14 @@
   /* description */
   .main__description-grow {
     background-image:
-            url("../../../assets/img/bg-section-top-mobile-1.svg"),
-            url("../../../assets/img/bg-section-bottom-mobile-1.svg");
+            url("../assets/img/bg-section-top-mobile-1.svg"),
+            url("../assets/img/bg-section-bottom-mobile-1.svg");
   }
 
   .main__description-users{
     background-image:
-            url("../../../assets/img/bg-section-top-mobile-2.svg"),
-            url("../../../assets/img/bg-section-bottom-mobile-2.svg");
+            url("../assets/img/bg-section-top-mobile-2.svg"),
+            url("../assets/img/bg-section-bottom-mobile-2.svg");
   }
 
   .description--bg-grow{
