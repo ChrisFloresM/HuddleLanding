@@ -18,6 +18,10 @@
   text-decoration: none;
   transition: all 0.3s;
 
+  &:link, &:visited {
+    color: $primary-pink;
+  }
+
   &:hover, &:active {
     cursor: pointer;
     background-color: $primary-pink;
