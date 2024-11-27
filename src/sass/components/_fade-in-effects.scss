@@ -1,0 +1,22 @@
+@use "../abstracts/variables.scss" as *;
+
+/* Hide elements from default */
+.hide-default {
+  opacity: 0;
+}
+
+.fade-in-up {
+  animation: fade-in-top 1s ease-in-out;
+}
+
+@keyframes fade-in-top {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
