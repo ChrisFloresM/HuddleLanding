@@ -1,4 +1,5 @@
 
+/* Logic for fade in animations */
 /* Get the mockups hero image */
 /*const mockupsHeroImg = document.querySelector('.main__hero-mockups');*/
 const hidenElements = document.querySelectorAll('.hide-default');
@@ -24,3 +25,34 @@ const observer = new IntersectionObserver(function(entries, observer) {
 hidenElements.forEach(hidenElement => {
     observer.observe(hidenElement);
 })
+
+/* Add logic for modal window */
+const closeButton = document.querySelector('.modal__close');
+const openButtons = document.querySelectorAll('.try-it-btn');
+
+closeButton.addEventListener('click', closeModalWindow);
+
+openButtons.forEach(openButton => {
+    openButton.addEventListener('click', openModalWindow);
+})
+
+function closeModalWindow() {
+    const modal = document.querySelector('.modal');
+    modal.classList.remove("visible");
+
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500);
+
+}
+
+function openModalWindow() {
+    const modal = document.querySelector('.modal');
+    modal.style.display = "block";
+
+    setTimeout(() => {
+        modal.classList.add("visible");
+    }, 10);
+
+}
+

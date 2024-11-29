@@ -391,6 +391,57 @@ body {
   cursor: pointer;
 }
 
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s;
+}
+
+.visible {
+  opacity: 1;
+}
+
+/* Form styles */
+.modal__form {
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__form::after {
+  content: "Coming soon";
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: hsl(322, 100%, 66%);
+  font-size: 4rem;
+}
+
 /* Media queries */
 @media (max-width: 1200px) {
   /* Hero section queries */
