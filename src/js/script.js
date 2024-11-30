@@ -55,3 +55,33 @@ function openModalWindow() {
 
 }
 
+/* Email Sender functionality */
+(function() {
+    emailjs.init({
+        publicKey: "D6lbNvZgMdPsK32bG",
+    });
+})();
+
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('gmail_provider_test', 'contact_form_huddle', this, null)
+            .then(() => {
+                console.log('SUCCESS!');
+                emailjs.sendForm('gmail_provider_test', 'contact_reply', this, null).then(() => {
+                    console.log('SUCCESS!');
+                    alert("Email sent successfully, please check your inbox");
+                }, (error) => {
+                    console.log('ERROR!');
+                    alert("Sorry. An error occured. Try again later");
+                })
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert("Sorry. An error occured. Try again later");
+            });
+    });
+}
+
+
+

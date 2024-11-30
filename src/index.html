@@ -28,22 +28,23 @@
 			<section class="modal">
 				<div class="modal__form-container">
 					<h2 class="modal__heading">Tell us more about you...</h2>
-					<form class="modal__form">
+					<form id="contact-form" class="modal__form">
+						<input type="hidden" name="contact_number" value="697483">
 						<div class="modal__form-element">
 							<label class="modal__form-input-label" for="input-name">Full Name: </label>
-							<input id="input-name" class="modal__form-input-field" name="full-name" type="text" placeholder="Jhon Doe">
+							<input id="input-name" class="modal__form-input-field" name="user_name" type="text" placeholder="Jhon Doe" required>
 						</div>
 						
 						<div class="modal__form-element">
 							<label class="modal__form-input-label" for="input-email">E-Mail: </label>
-							<input id="input-email" class="modal__form-input-field" name="full-name" type="email" placeholder="example@gmail.com">
+							<input id="input-email" class="modal__form-input-field" name="user_email" type="email" placeholder="example@gmail.com" required>
 						</div>
 
 						<div class="modal__form-element">
 							<label class="modal__form-input-label" for="more-about">Why are you intereseted on our services?</label>
-							<textarea id="more-about" class="modal__form-input-field textarea" name="more-about" placeholder="I would like to request your services ..."></textarea>
+							<textarea id="more-about" class="modal__form-input-field textarea" name="message" placeholder="I would like to request your services ..." required></textarea>
 						</div>
-						<button class="modal__form-submit-button" type="button">Submit</button>
+						<button class="modal__form-submit-button" type="submit" value="Send">Submit</button>
 						<!-- Close button -->
 						<button class="modal__close" type="button">
 							<ion-icon class="modal__close-icon" name="close-outline"></ion-icon>
@@ -174,6 +175,9 @@
 		<!-- Ion icons scripts -->
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- EmailJS-->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 		<!-- page scripts -->
 		<script src="js/script.js"></script>
