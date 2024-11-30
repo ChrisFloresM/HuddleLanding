@@ -188,4 +188,10 @@
     align-self: flex-end;
     height: 4rem;
   }
+
+  /* Modal window */
+  .modal__form-element,.modal__form-submit-button {
+    width: 80%;
+  }
+
 }

@@ -26,11 +26,30 @@
 		</header>
 		<main>
 			<section class="modal">
-				<form class="modal__form">
-					<button class="modal__close" type="button">
-						<ion-icon class="modal__close-icon" name="close-outline"></ion-icon>
-					</button>
-				</form>
+				<div class="modal__form-container">
+					<h2 class="modal__heading">Tell us more about you...</h2>
+					<form class="modal__form">
+						<div class="modal__form-element">
+							<label class="modal__form-input-label" for="input-name">Full Name: </label>
+							<input id="input-name" class="modal__form-input-field" name="full-name" type="text" placeholder="Jhon Doe">
+						</div>
+						
+						<div class="modal__form-element">
+							<label class="modal__form-input-label" for="input-email">E-Mail: </label>
+							<input id="input-email" class="modal__form-input-field" name="full-name" type="email" placeholder="example@gmail.com">
+						</div>
+
+						<div class="modal__form-element">
+							<label class="modal__form-input-label" for="more-about">Why are you intereseted on our services?</label>
+							<textarea id="more-about" class="modal__form-input-field textarea" name="more-about" placeholder="I would like to request your services ..."></textarea>
+						</div>
+						<button class="modal__form-submit-button" type="button">Submit</button>
+						<!-- Close button -->
+						<button class="modal__close" type="button">
+							<ion-icon class="modal__close-icon" name="close-outline"></ion-icon>
+						</button>
+					</form>
+				</div>
 			</section>
 			<section class="main__hero">
 				<h1 class="main__hero-header fade-in-up">Build The Community Your Fans Will Love</h1>

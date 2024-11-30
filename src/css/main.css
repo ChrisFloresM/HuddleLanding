@@ -409,23 +409,17 @@ body {
 }
 
 /* Form styles */
-.modal__form {
+.modal__form-container {
+  font-family: "Poppins", sans-serif;
   width: 90%;
   max-width: 600px;
-  height: 600px;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 1px 4px rgba(0, 0, 0, 0.15);
+  background: #83a4d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.modal__form::after {
-  content: "Coming soon";
-  font-size: 4rem;
-  position: absolute;
+  padding: 5rem 0 5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -438,8 +432,82 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  color: hsl(322, 100%, 66%);
+  color: hsl(192, 100%, 9%);
   font-size: 4rem;
+  transition: color 0.5s;
+}
+.modal__close:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+/* Heading */
+.modal__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  padding: 0 2rem 0;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.modal__form-element {
+  width: 60%;
+}
+
+.modal__form-input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  margin-left: 15px;
+  line-height: 1.2;
+}
+
+.modal__form-input-field {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: #EEE;
+  transition: all 0.5s;
+  border: 1px solid hsl(192, 100%, 9%);
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.modal__form-input-field:focus {
+  outline: none;
+  border: 1px solid hsl(322, 100%, 66%);
+}
+
+.textarea {
+  resize: none;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.modal__form-submit-button {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  width: 60%;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: hsl(255, 100%, 100%);
+  background-color: hsl(321, 100%, 78%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.modal__form-submit-button:hover {
+  background-color: hsl(322, 100%, 66%);
 }
 
 /* Media queries */
@@ -587,6 +655,10 @@ body {
   .footer__input-btn {
     align-self: flex-end;
     height: 4rem;
+  }
+  /* Modal window */
+  .modal__form-element, .modal__form-submit-button {
+    width: 80%;
   }
 }
 

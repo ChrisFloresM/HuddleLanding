@@ -1,4 +1,3 @@
-
 /* Logic for fade in animations */
 /* Get the mockups hero image */
 /*const mockupsHeroImg = document.querySelector('.main__hero-mockups');*/
